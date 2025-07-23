@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Booth - Gestión de Talento Humano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            background: #F7E8DF;
+            color: #615E59;
+        }
+        .container {
+            max-width: 720px;
+            margin: 42px auto 28px auto;
+            background: #fff;
+            border-radius: 22px;
+            box-shadow: 0 4px 20px #eee;
+            padding: 36px 32px;
+        }
+        h1 {
+            color: #FF5353;
+            text-align: center;
+            font-size: 2.6rem;
+            font-weight: 900;
+        }
+        h2 {
+            color: #615E59;
+            font-size: 1.4rem;
+            margin-top: 2.5em;
+            margin-bottom: 0.7em;
+            text-align: left;
+            font-weight: bold;
+        }
+        h3 {
+            color: #FF5353;
+            font-size: 1.07rem;
+            margin-bottom: 0.6em;
+        }
+        p {
+            color: #615E59;
+            font-size: 1.07rem;
+            line-height: 1.7;
+            margin-bottom: 1.2em;
+        }
+        .btn, .whatsapp-btn {
+            display: inline-block;
+            background: #FF5353;
+            color: #fff;
+            padding: 14px 38px;
+            border-radius: 28px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.08rem;
+            box-shadow: 0 3px 12px #f7e8df80;
+            transition: background 0.2s;
+            margin: 18px auto;
+            text-align: center;
+        }
+        .btn:hover, .whatsapp-btn:hover {
+            background: #d64a4a;
+        }
+        .logo {
+            width: 110px;
+            display: block;
+            margin: 0 auto 18px auto;
+        }
+        .servicios-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .servicios-list li {
+            margin-bottom: 18px;
+            padding-left: 0.5em;
+            border-left: 4px solid #FF5353;
+            background: #F7E8DF;
+            border-radius: 6px;
+            padding: 10px 18px;
+        }
+        .precios-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+            font-size: 1rem;
+        }
+        .precios-table th, .precios-table td {
+            border: 1px solid #F7E8DF;
+            padding: 10px;
+            text-align: left;
+        }
+        .precios-table th {
+            background: #F7E8DF;
+        }
+        .equipo-section {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+        .equipo-card {
+            background: #F7E8DF;
+            border-radius: 14px;
+            padding: 18px 18px 14px 18px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 2px 8px #eee;
+        }
+        .equipo-card img {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            margin-bottom: 12px;
+            object-fit: cover;
+            border: 3px solid #FF5353;
+        }
+        .equipo-card h4 {
+            margin: 0 0 0.4em 0;
+            color: #FF5353;
+            font-size: 1.09rem;
+        }
+        .equipo-card p {
+            font-size: 0.98rem;
+            margin: 0;
+        }
+        .form-section {
+            margin: 2em 0;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .form-section input, .form-section textarea {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-section button {
+            background: #FF5353;
+            color: #fff;
+            border: none;
+            padding: 12px 0;
+            border-radius: 22px;
+            font-weight: bold;
+            font-size: 1.08rem;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .form-section button:hover {
+            background: #d64a4a;
+        }
+        .redes {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .redes a {
+            display: inline-block;
+            margin: 0 8px;
+            text-decoration: none;
+            color: #FF5353;
+            font-size: 1.32rem;
+            vertical-align: middle;
+            transition: color 0.2s;
+        }
+        .redes a:hover {
+            color: #d64a4a;
+        }
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            margin-top: 16px;
+            padding: 12px 36px;
+        }
+        @media (max-width: 800px) {
+            .container { padding: 10px; }
+            .equipo-section { gap: 8px; }
+            .equipo-card { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo: Subir y descomentar la línea de abajo -->
+        <!-- <img src="logo-talentbooth.png" class="logo" alt="Logo Talent Booth"> -->
+        <h1>Talent Booth</h1>
+        <p style="text-align:center; font-size:1.1rem;">
+            Consultoría y outsourcing en gestión del talento humano.<br>
+            Creamos experiencias, procesos y equipos que hacen sonreír a tu gente.<br>
+            <b>We make HR cool again.</b>
+        </p>
+        <a class="btn" href="mailto:hola@talentbooth.work">Contáctanos por email</a>
+        <a class="whatsapp-btn" href="https://wa.link/e5nq4g" target="_blank">Contáctanos por WhatsApp</a>
+
+        <h2>Servicios detallados</h2>
+        <ul class="servicios-list">
+            <li><b>The Spark:</b> Clima y Cultura Organizacional (encuestas, clima laboral, integración, festividades, sentido de pertenencia)</li>
+            <li><b>The Rules:</b> Integridad Laboral (protocolos, normativas, ética, seguridad y salud, expedientes, contratos)</li>
+            <li><b>The Boost:</b> Gestión de Desempeño y Desarrollo (evaluación, KPIs, planes de carrera, capacitación, skills)</li>
+            <li><b>The Perks:</b> Compensación Total (escala salarial, beneficios, incentivos, nómina, análisis de equidad)</li>
+            <li><b>The Catch:</b> Reclutamiento y Selección (sourcing, entrevistas, informes, onboarding, headhunting, pruebas psicológicas)</li>
+            <li><b>The Belonging:</b> Diversidad, Equidad e Inclusión (estrategias DEI, campañas, formación y protocolo ético)</li>
+            <li><b>The Booth:</b> Diagnóstico de Gestión del Talento Humano (medición de madurez, recomendaciones, benchmarking)</li>
+        </ul>
+
+        <h2>Precios / Planes</h2>
+        <table class="precios-table">
+            <tr>
+                <th>Plan</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Consultoría</td>
+                <td>Rediseño de estrategia, implementación de procesos, asesoría ejecutiva, respuesta ≤ 24h, reuniones semanales.</td>
+                <td>$1.500/mes</td>
+            </tr>
+            <tr>
+                <td>Agencia</td>
+                <td>Implementación y seguimiento operativo, atención a colaboradores, beneficios Talent Booth, reuniones semanales.</td>
+                <td>$850/mes</td>
+            </tr>
+            <tr>
+                <td>Acompañamiento</td>
+                <td>Seguimiento puntual, asesoría ejecutiva ≤ 48h, beneficios Talent Booth, reuniones quincenales.</td>
+                <td>$550/mes</td>
+            </tr>
+            <tr>
+                <td>Add-ons / Extras</td>
+                <td>Celebraciones, eventos, pruebas psicológicas, headhunting, cálculo de nómina, derecho laboral.</td>
+                <td>Desde $80</td>
+            </tr>
+        </table>
+
+        <h2>Equipo</h2>
+        <div class="equipo-section">
+            <div class="equipo-card">
+                <img src="https://ui-avatars.com/api/?name=María+Fernanda+Pacheco&background=ff5353&color=fff&size=120" alt="María Fernanda Pacheco">
+                <h4>María Fernanda Pacheco</h4>
+                <p>Co-fundadora. Relacionista Industrial (UCAB). Especialista en procesos de talento, consultoría, cultura y compensación. Apasionada por el impacto social.</p>
+            </div>
+            <div class="equipo-card">
+                <img src="https://ui-avatars.com/api/?name=Constanza+Mujica&background=ff5353&color=fff&size=120" alt="Constanza Mujica">
+                <h4>Constanza Mujica</h4>
+                <p>Co-fundadora. Relacionista Industrial (UCAB). Experta en desarrollo organizacional, liderazgo y bienestar laboral. Impulsora del cambio positivo.</p>
+            </div>
+        </div>
+
+        <h2>Formulario de contacto</h2>
+        <div class="form-section">
+            <form action="https://formsubmit.co/hola@talentbooth.work" method="POST">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="message" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/talent.booth/" target="_blank" title="Instagram">
+                <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5Zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5a4.25 4.25 0 0 1-4.25 4.25h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5ZM12 7.25A4.75 4.75 0 1 0 12 16.75a4.75 4.75 0 0 0 0-9.5Zm0 1.5a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5Zm5-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/></svg>
+            </a>
+            <a href="mailto:hola@talentbooth.work" title="Email">
+                <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24"><path d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25V6.75Zm2.75-1.25a1.25 1.25 0 0 0-1.25 1.25v.51l8.01 5.47c.3.2.68.2.98 0l8.01-5.47v-.51a1.25 1.25 0 0 0-1.25-1.25H4.75Zm15.5 2.54-7.27 4.97a2.75 2.75 0 0 1-3.16 0L2.75 8.04V17.25c0 .69.56 1.25 1.25 1.25h14.5c.69 0 1.25-.56 1.25-1.25V8.04Z"/></svg>
+            </a>
+            <a href="https://wa.link/e5nq4g" target="_blank" title="WhatsApp">
+                <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.372 0 0 5.372 0 12c0 2.11.552 4.138 1.6 5.96L0 24l6.173-1.59A11.956 11.956 0 0 0 12 24c6.628 0 12-5.372 12-12 0-3.18-1.24-6.17-3.48-8.52zM12 22.07c-1.816 0-3.594-.483-5.152-1.397l-.367-.217-3.667.944.98-3.573-.227-.367C2.41 15.594 1.93 13.813 1.93 12 1.93 6.33 6.33 1.93 12 1.93c3.21 0 6.25 1.25 8.54 3.51A10.062 10.062 0 0 1 22.07 12c0 5.67-4.4 10.07-10.07 10.07zm5.387-6.237c-.244-.122-1.44-.712-1.663-.792-.223-.081-.386-.122-.55.122s-.63.792-.773.957c-.142.163-.285.183-.529.061-.244-.122-1.03-.38-1.96-1.211-.724-.648-1.214-1.449-1.357-1.693-.142-.244-.015-.376.106-.498.109-.108.244-.285.366-.428.122-.142.162-.244.244-.407.081-.163.041-.305-.02-.427-.061-.122-.55-1.326-.754-1.816-.199-.479-.403-.413-.55-.422-.142-.009-.305-.011-.467-.011s-.427.061-.651.305c-.224.244-.858.837-.858 2.038 0 1.201.878 2.362 1 .454.122 1.244 2.023 2.792 3.741 3.43.524.185.932.295 1.253.378.526.133 1.004.115 1.383.07.423-.05 1.44-.587 1.643-1.152.204-.566.204-1.05.142-1.152-.061-.102-.223-.163-.467-.285z"/></svg>
+            </a>
+        </div>
+    </div>
+    <footer style="text-align:center; margin-top:18px; color:#b8ada7; font-size: 0.96rem;">
+        © Talent Booth 2024 · hola@talentbooth.work · @talent.booth
+Agregar index.html inicial
